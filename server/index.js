@@ -10,11 +10,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 router.get('/', function(req, res) {
-  console.log('hello world')
- res.json({ message: "API Initialized!"})
+  res.json({ message: "API Initialized!"})
 })
 
-app.use('/', router)
+app.use('/api', router)
 
 // Set up the port
 const API_PORT = process.env.PORT || 3001;

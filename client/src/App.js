@@ -7,7 +7,8 @@ import DummyData from './Components/DummyData';
 class App extends Component {
 
   componentDidMount() {
-    fetch('/')
+    fetch('/api')
+    .then(data => data.json())
     .then(data => console.log(data))
   }
 
