@@ -5,6 +5,12 @@ import DummyData from './Components/DummyData';
 
 
 class App extends Component {
+
+  componentDidMount() {
+    fetch('/')
+    .then(data => console.log(data))
+  }
+
   render() {
     return (
       <div className="notificationsFrame">
