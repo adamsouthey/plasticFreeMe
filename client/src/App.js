@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-import Content from './Components/Content.js';
-import Header from './Components/Header.js';
-import DummyData from './Components/DummyData';
-
+import React, { Component } from 'react'
+import ExtendedHeader from './Components/ExtendedHeader'
+import HotProducts from './Components/HotProducts'
 
 class App extends Component {
 
@@ -16,9 +14,8 @@ class App extends Component {
     return (
       <div className="notificationsFrame">
         <div className="panel">
-          <DummyData />
-          <Header />
-          <Content />
+          <ExtendedHeader />
+          <HotProducts/>
         </div>
       </div>
     );
