@@ -2,15 +2,3 @@ html, body, #root, #root>div, #root>div>div {
   margin: 0px;
   height: 100%;
 }
-
-/* Demo purposes only */
-body {
-  background-color: #212121;
-  text-align: center;
-	color: white;
-}
-.app{
-	width: 1200px;
-	margin: auto;
-	font-size: 24px;
-}
